@@ -11,8 +11,8 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:1.5.10.RELEASE")
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.10.RELEASE'
     compile group: 'org.springframework.cloud', name: 'spring-cloud-config', version: '2.0.0.M5'
-    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '1.4.1.RELEASE'
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-config-server', version: '2.0.0.M5'
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '2.0.0.M5'
 }
